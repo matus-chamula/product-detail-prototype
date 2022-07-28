@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title></title>
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/header.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/gallery.css" />
+        <link rel="stylesheet" href="./assets/css/aside.css" />
+        <link rel="stylesheet" href="./assets/css/tabs.css" />
+        <link rel="stylesheet" href="./assets/css/reviews.css" />
+        <link rel="stylesheet" href="./assets/css/related.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-banner-wrapper">
+                <div class="header-banner">
+                    <img class="header-banner__img" src="https://cdn.notinoimg.com/images/gallery/ba/1/_sleva.png" />
+                    <div class="header-banner__content">
+                        <div class="header-banner__text">Až -40 %</div>
+                        <div class="header-banner__text header-banner__text--gray">na oblíbené značky</div>
+                    </div>
+                </div>
+                <div class="header-banner">
+                    <img class="header-banner__img" src="https://cdn.notinoimg.com/images/gallery/ba/1/2022-18_zdravi.png" />
+                    <div class="header-banner__content">
+                        <div class="header-banner__text">-15 % na zdravou</div>
+                        <div class="header-banner__text header-banner__text--gray">a sportovní výživu</div>
+                    </div>
+                </div>
+                <div class="header-banner">
+                    <img class="header-banner__img" src="https://cdn.notinoimg.com/images/gallery/ba/1/2018-03-07_chloe_nomad.png" />
+                    <div class="header-banner__content">
+                        <div class="header-banner__text">Darujte parfém</div>
+                        <div class="header-banner__text banner__text--gray">s věnováním</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-info">
+                <div class="header-info__link">Volejte 530 514 014</div>
+                <div class="header-info__link">Prodejny</div>
+                <div class="header-info__link">Doprava</div>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav-wrapper">
+                <div class="nav-left-wrapper">
+                    <div class="nav-hamburger">
+                        <span class="nav-hamburger__layer"></span>
+                        <span class="nav-hamburger__layer"></span>
+                        <span class="nav-hamburger__layer"></span>
+                    </div>
+                    <div class="nav-logo">
+                        <svg class="nav-logo__svg" color="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 50" aria-label="Notino logo">
+                            <path fill="currentColor" d="M284.7,25.4c0,14-10.87,24.1-24.37,24.1S235.9,39.36,235.9,25.4,246.84,1.3,260.33,1.3,284.7,11.39,284.7,25.4m-38.19,0C246.51,34,252.74,40,260.27,40S274,34,274,25.4s-6.16-14.67-13.76-14.67-13.76,6-13.76,14.67"></path>
+                            <path fill="currentColor" d="M102.81,25.4c0,14-10.87,24.1-24.37,24.1S54,39.36,54,25.4,65,1.3,78.45,1.3s24.37,10.09,24.37,24.1m-38.19,0C64.63,34,70.85,40,78.38,40S92.14,34,92.14,25.4,86,10.73,78.38,10.73s-13.75,6-13.75,14.67"></path>
+                            <polygon fill="currentColor" points="146.64 11.45 132.56 11.45 132.56 48.4 122.08 48.4 122.08 11.45 108 11.45 108 2.54 146.64 2.54 146.64 11.45"></polygon>
+                            <rect fill="currentColor" x="158.18" y="2.54" width="10.48" height="45.85"></rect>
+                            <path fill="currentColor" d="M32.67,2.55V31.17s-10.08-14-14.25-19.76a48.15,48.15,0,0,0-3.71-4.78A13.2,13.2,0,0,0,1.24,2.55V48.39H11.72V19.77S21.8,33.77,26,39.54a48.15,48.15,0,0,0,3.71,4.78,13.17,13.17,0,0,0,13.48,4.08V2.55Z"></path>
+                            <path fill="currentColor" d="M214.56,2.55V31.17s-10.08-14-14.25-19.76a48.15,48.15,0,0,0-3.71-4.78,13.2,13.2,0,0,0-13.48-4.08V48.39H193.6V19.77s10.08,14,14.25,19.76a48.14,48.14,0,0,0,3.71,4.78A13.17,13.17,0,0,0,225,48.39V2.55Z"></path>
+                        </svg>
+                    </div>
+                    <div class="nav-desktop-search">
+                        <input class="nav-desktop-search__input" type="search" placeholder="Hledej parfém, kosmetiku, značku…" value="" />
+                        <div class="nav-desktop-search__icon">
+                            <svg class="nav-desktop-search__svg" tabindex="-1" color="#bfbfbf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <path fill="currentColor" d="M45.43,7.79a26.61,26.61,0,1,0-4.18,41L55.33,62.92a3.7,3.7,0,0,0,5.23,0l2.36-2.36a3.7,3.7,0,0,0,0-5.23L48.84,41.25A26.62,26.62,0,0,0,45.43,7.79ZM38.95,38.95a17.44,17.44,0,1,1,0-24.66A17.44,17.44,0,0,1,38.95,38.95Z"></path>
+                                <path fill="currentColor" d="M45.43,7.8a26.61,26.61,0,1,0-4.18,41L55.33,62.92a3.7,3.7,0,0,0,5.23,0l2.36-2.36a3.7,3.7,0,0,0,0-5.23L48.84,41.26A26.62,26.62,0,0,0,45.43,7.8ZM38.95,38.95a17.44,17.44,0,1,1,0-24.66A17.44,17.44,0,0,1,38.95,38.95Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-icon-wrapper">
+                    <div class="nav-icon">
+                        <svg class="nav-icon__svg nav-icon__svg--user" color="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 64">
+                            <path fill="currentColor" d="M12.18 37.44C5.48 41.79 0 50.18 0 64h5.67c0-10.73 3.9-18.75 10.51-22.43a27 27 0 0 1-4-4.13zM52.06 37.44a27 27 0 0 1-4 4.13c6.61 3.68 10.51 11.7 10.51 22.43h5.67c0-13.82-5.48-22.21-12.18-26.56zM32.12 40.51c-10.38 0-18.83-9.09-18.83-20.25S21.74 0 32.12 0 51 9.09 51 20.26s-8.5 20.25-18.88 20.25zm0-34.84C24.86 5.67 19 12.21 19 20.26s5.91 14.58 13.17 14.58 13.12-6.54 13.12-14.58S39.38 5.67 32.12 5.67z"></path>
+                        </svg>
+                        <div class="nav-icon__text">Šilla</div>
+                    </div>
+                    <div class="nav-icon">
+                        <svg class="nav-icon__svg nav-icon__svg--fav" color="#ffffff" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div class="nav-icon">
+                        <svg class="nav-icon__svg nav-icon__svg--cart" color="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 64">
+                            <path fill="currentColor" d="M54.64,22.05l2,5A6.6,6.6,0,0,1,53,35.65a6.44,6.44,0,0,1-2.47.49A6.59,6.59,0,0,1,44.41,32l-4-9.95H29.44l-4,10a6.61,6.61,0,0,1-12.26-4.95l2-5H0l7.42,37.2h55l7.42-37.2Z"></path>
+                            <path fill="currentColor" d="M50.54,32.36a2.84,2.84,0,0,1-2.63-1.77L41.62,15a7.37,7.37,0,0,0-5.71-4.76,8.28,8.28,0,0,0-2,0A7.37,7.37,0,0,0,28.21,15L21.92,30.59a2.84,2.84,0,1,1-5.26-2.12L23,12.88A12.72,12.72,0,0,1,36.62,4.62a13,13,0,0,1,10.25,8.26l6.29,15.59a2.83,2.83,0,0,1-1.56,3.69A3.06,3.06,0,0,1,50.54,32.36Z"></path>
+                        </svg>
+                        <div class="nav-icon__text">Košík</div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-mobile-search">
+                <input class="nav-mobile-search__input" type="search" placeholder="Hledej parfém, kosmetiku, značku…" value="" />
+                <div class="nav-mobile-search__icon">
+                    <svg class="nav-mobile-search__svg" tabindex="-1" color="#bfbfbf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <path fill="currentColor" d="M45.43,7.79a26.61,26.61,0,1,0-4.18,41L55.33,62.92a3.7,3.7,0,0,0,5.23,0l2.36-2.36a3.7,3.7,0,0,0,0-5.23L48.84,41.25A26.62,26.62,0,0,0,45.43,7.79ZM38.95,38.95a17.44,17.44,0,1,1,0-24.66A17.44,17.44,0,0,1,38.95,38.95Z"></path>
+                        <path fill="currentColor" d="M45.43,7.8a26.61,26.61,0,1,0-4.18,41L55.33,62.92a3.7,3.7,0,0,0,5.23,0l2.36-2.36a3.7,3.7,0,0,0,0-5.23L48.84,41.26A26.62,26.62,0,0,0,45.43,7.8ZM38.95,38.95a17.44,17.44,0,1,1,0-24.66A17.44,17.44,0,0,1,38.95,38.95Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-menu__category nav-menu__category--sale">Akce</div>
+                <div class="nav-menu__category">Parfémy</div>
+                <div class="nav-menu__category">Líčení</div>
+                <div class="nav-menu__category">Vlasy</div>
+                <div class="nav-menu__category">Pleť</div>
+                <div class="nav-menu__category">Tělo</div>
+                <div class="nav-menu__category">Zuby</div>
+                <div class="nav-menu__category">Vůně do bytu</div>
+                <div class="nav-menu__category">Muži</div>
+                <div class="nav-menu__category">Dermokosmetika</div>
+                <div class="nav-menu__category">Zdraví</div>
+                <div class="nav-menu__category">Slunce</div>
+                <div class="nav-menu__category">Ostatní</div>
+                <div class="nav-menu__category">Značky</div>
+            </div>
+        </nav>
+        <main class="main">
+            <section class="section-breadcrumbs"><span class="section-breadcrumbs__item">Parfémy</span>/<span class="section-breadcrumbs__item">Damské parfémy</span>/<span class="section-breadcrumbs__item">Parfémované vody</span></section>
+            <div class="main-wrapper">
+                <section class="section-aside-product-info-mobile">
+                    <div class="aside-breadcrumbs"><div class="aside-breadcrumbs__category">Parfémy</div></div>
+                    <div class="aside-product-name-wrapper">
+                        <div class="aside-product-name-mobile-wrapper">
+                            <div class="aside-product-brand"></div>
+                            &nbsp;
+                            <div class="aside-product-name"></div>
+                            <div class="aside-product-category"></div>
+                        </div>
+                        <div class="aside-fav-icon">
+                            <svg class="aside-fav-icon__svg" color="#808080" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="aside-product-rating">
+                        <svg class="aside-product-rating__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                            <defs>
+                                <clipPath id="reviews-stats__stars">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </clipPath>
+                            </defs>
+                            <g fill="#e6e6e6">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                            </g>
+                            <rect height="48" width="240" fill="#000" clip-path="url(#reviews-stats__stars)"></rect>
+                        </svg>
+                        <span class="aside-product-rating__average">(4,7) <a href="#reviews" class="aside-product-rating__count">1106 recenzí</a></span>
+                    </div>
+                </section>
+                <div class="section-wrapper">
+                    <section class="section-gallery">
+                        <div class="gallery-main-wrapper">
+                            <div class="gallery-main">
+                                <img class="gallery-main__img" src="" alt="" />
+                            </div>
+                            <div class="gallery-main-label-wrapper">
+                                <div class="gallery-main-label-box gallery-main-label-box--gift hidden">
+                                    <span class="gallery-main-label">Dárek k nákupu</span>
+                                </div>
+                                <div class="gallery-main-label-box gallery-main-label-box--free-delivery-offer hidden">
+                                    <span class="gallery-main-label">Doprava zdarma od 2ks</span>
+                                </div>
+                            </div>
+                            <div class="gallery-main-progress-bar-wrapper">
+                                <div class="gallery-main-progress-bar"></div>
+                            </div>
+                            <div class="gallery-main-product-tags">
+                                <div class="aside-product-tags__box aside-product-tags__box--sale hidden">Akce</div>
+                                <div class="aside-product-tags__box aside-product-tags__box--free-delivery hidden">Doprava zdarma</div>
+                                <div class="aside-product-tags__box aside-product-tags__box--new hidden">Nové</div>
+                            </div>
+                        </div>
+                        <div class="gallery-thumbnail-wrapper">
+                            <div class="gallery-thumbnail__chevron-wrapper">
+                                <div class="gallery-thumbnail__chevron gallery-thumbnail__chevron--prev hidden"></div>
+                            </div>
+                            <div class="gallery-thumbnail__carousel">
+                                <div class="gallery-thumbnail gallery-thumbnail--active">
+                                    <img class="gallery-thumbnail__img" src="" alt="" />
+                                </div>
+                                <div class="gallery-thumbnail">
+                                    <img class="gallery-thumbnail__img" src="" alt="" />
+                                </div>
+                                <div class="gallery-thumbnail">
+                                    <img class="gallery-thumbnail__img" src="" alt="" />
+                                </div>
+                                <div class="gallery-thumbnail">
+                                    <img class="gallery-thumbnail__img" src="" alt="" />
+                                </div>
+                                <div class="gallery-thumbnail">
+                                    <img class="gallery-thumbnail__img" src="" alt="" />
+                                </div>
+                                <div class="gallery-thumbnail">
+                                    <img class="gallery-thumbnail__img" src="" alt="" />
+                                </div>
+                            </div>
+                            <div class="gallery-thumbnail__chevron-wrapper">
+                                <div class="gallery-thumbnail__chevron gallery-thumbnail__chevron--next"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-tabs">
+                        <div class="tabs-wrapper">
+                            <div class="tab tab--active">Popis</div>
+                            <div class="tab">O značce</div>
+                            <div class="tab">Objevte více</div>
+                            <a href="#reviews" class="tab tab--anchor">Recenze</a>
+                        </div>
+                        <div class="tab-content tab-content--visible">
+                            <div class="tab-content__section tab-content__section--table">
+                                <div class="tab-content__desc-title tab-content__desc-title--main">Vlastnosti</div>
+                                <div class="tab-content__tr">
+                                    <div class="tab-content__td">Hlava</div>
+                                    <div class="tab-content__td">máta, mandarinka</div>
+                                </div>
+                                <div class="tab-content__tr">
+                                    <div class="tab-content__td">Srdce</div>
+                                    <div class="tab-content__td">skořice, růže</div>
+                                </div>
+                                <div class="tab-content__tr">
+                                    <div class="tab-content__td">Základ</div>
+                                    <div class="tab-content__td">ambra, kůže</div>
+                                </div>
+                                <div class="tab-content__tr">
+                                    <div class="tab-content__td">Druh vůně</div>
+                                    <div class="tab-content__td">kořenitá, dřevitá</div>
+                                </div>
+                            </div>
+                            <div class="tab-content__section">
+                                <div class="tab-content__desc-title tab-content__desc-title--main">Popis</div>
+                                <div class="tab-content__desc-text">Parfémovaná voda Lancôme La Vie Est Belle je symbolem svobody a štěstí, poctou všem krásám života. Tato exkluzivní dámská vůně byla navržena tak, aby vám okamžitě vykouzlila úsměv na rtech.</div>
+                                <div class="tab-content__desc-text">
+                                    <ul class="tab-content__desc-list">
+                                        <li>sladká ovocno-květinová, sofistikovaná vůně</li>
+                                        <li>pro sebevědomou ženu, jež odmítá diktát společnosti</li>
+                                        <li>vhodná pro celodenní nošení</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content__desc-title">Složení vůně</div>
+                                <div class="tab-content__desc-text">V úvodu parfémované vody La Vie Est Belle vás okouzlí šťavnaté esence černého rybízu a sladké hrušky. Srdcem celé vonné kompozice je vzácný kosatec, jímž dále prostupují tóny hedvábného jasmínu a magických květů pomerančovníku. Základ vůně je tvořen z jedinečných tonka fazolí, delikátních pralinek, exotického pačuli a gurmánské vanilky.</div>
+                                <div class="tab-content__desc-title">Příběh vůně</div>
+                                <div class="tab-content__desc-text">La Vie Est Belle představuje volbu žít svůj život podle sebe, svobodu vybrat si vlastní cestu ke štěstí a nenechat se svázat očekáváním společnosti. Skrývá v sobě vyváženou kombinaci krásy a síly. Vůně byla uvedena na trh v roce 2012 a na jejím vzniku se podíleli hned tři francouzští mistři parfémáři v čele s Dominiquem Ropionem. Flakon parfémované vody znázorňuje v ostrých křišťálových liniích úsměv a je přepracováním původní verze z roku 1949.</div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-content__section">
+                                <div class="tab-content__desc-title tab-content__desc-title--main">O značce <span class="global-brand"></span></div>
+                                <div class="tab-content__desc-text">Příběh Lancôme, světoznámé značky kvalitní kosmetické péče o krásu, se píše již přes 80 let. Od svého založení v roce 1935 se produkty Lancôme vyznačují prokazatelnými výsledky a pyšní nádechem francouzského kouzla.</div>
+                                <div class="tab-content__desc-text">Hned v roce svého založení uvedla společnost na trh první vůni a nadšení veřejnosti na sebe nenechalo dlouho čekat. O rok později vyvinula první pleťový krém Lancôme, který je dodnes díky svým neobyčejným vlastnostem nezbytnou součástí kosmetické výbavy každé ženy. V současnosti patří přípravky a parfémy Lancôme mezi nejprodávanější ve svých kategoriích.</div>
+                                <div class="tab-content__desc-text">Značka Lancôme oslavuje ženy a pomáhá jim získat sebedůvěru. Objevte i vy kosmetiku a vůně Lancôme – být sama sebou a cítit se skvěle ještě nikdy nebylo tak snadné.</div>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-content__desc-title tab-content__desc-title--main">Více o <span class="global-brand"></span> <span class="global-name"></span></div>
+                            <div class="tab-content__section tab-content__section--flex">
+                                <div class="tab-content__flex-item">
+                                    <img class="tab-content__desc-img" src="https://cdn.notinoimg.com/images/gallery/richcontent/lancome/lveb/lveb_edp_ingredients_505x400.jpg" alt="" />
+                                </div>
+                                <div class="tab-content__flex-item">
+                                    <div class="tab-content__desc-title">ŽIVOT JE KRÁSNÝ</div>
+                                    <div class="tab-content__desc-text">Ikonická vůně La vie est belle Eau de Parfum otevřela novou kapitolu, je to vůbec první vůně prostoupená extraktem z vzácného kosatce. Tato vonná kompozice je tvořena nejvzácnějšími přírodními ingrediencemi a představuje moderní interpretaci orientálních vůní s dotekem gurmánské vanilky. Snoubí se v ní elegance vzácného kosatce se silou exotické pačule a sladkostí vanilkových tónů, které společně vytváří nezaměnitelnou a hlubokou vůni.</div>
+                                </div>
+                            </div>
+                            <div class="tab-content__section tab-content__section--flex">
+                                <div class="tab-content__flex-item">
+                                    <div class="tab-content__desc-title">KŘIŠŤÁLOVÝ ÚSMĚV</div>
+                                    <div class="tab-content__desc-text">Oslnivý flakon přezdívaný „le sourire de cristal“ neboli křišťálový úsměv evokuje oblé tvary usmívajících se rtů promítnuté do křišťálového čtyřhranu. Tečkou za jeho rafinovaností je perleťová organzová stuha, kterou je převázáno hrdlo flakonu, ztělesňující křídla svobody.</div>
+                                </div>
+                                <div class="tab-content__flex-item">
+                                    <img class="tab-content__desc-img" src="https://cdn.notinoimg.com/images/gallery/richcontent/lancome/lveb/lveb_edp_flacon_505x400.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="tab-content__section tab-content__section--flex">
+                                <div class="tab-content__flex-item">
+                                    <img class="tab-content__desc-img" src="https://cdn.notinoimg.com/images/gallery/richcontent/lancome/lveb/lveb_edp_julia_505x400.jpg" alt="" />
+                                </div>
+                                <div class="tab-content__flex-item">
+                                    <div class="tab-content__desc-text">Štěstí je skutečné, pouze je-li sdíleno. Každý flakon vůně La vie est belle je ztělesněním radosti. Přesně jako Julia Roberts – stačí jediný nečekaný čin, který přivolá štěstí a umožní vám jej sdílet se všemi okolo.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <aside class="aside">
+                    <div class="aside-product-brand"></div>
+                    <div class="aside-product-name-wrapper">
+                        <div class="aside-product-name"></div>
+                        <div class="aside-fav-icon">
+                            <svg class="aside-fav-icon__svg" color="#808080" aria-label="Wishlist" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M11.9672727,23.12625 L11.1345455,22.5 C7.71636364,19.9875 5.05454545,17.44125 3.22909091,14.93625 C1.49454545,12.5625 0.538181818,10.27125 0.385454545,8.1375 C0.187012774,6.10535738 0.910493349,4.09271563 2.34545455,2.685 C3.50030137,1.52735746 5.04764879,0.880196689 6.65818182,0.88125 C7.91636364,0.88125 9.54181818,1.0275 10.9490909,2.15625 C11.3317201,2.4506027 11.6838868,2.78487158 12,3.15375 C12.3196784,2.78465931 12.674149,2.44925973 13.0581818,2.1525 C14.4727273,1.0275 16.1018182,0.87375 17.3636364,0.87375 C18.9734518,0.867070062 20.521226,1.51360865 21.6727273,2.67375 C23.1043181,4.08100668 23.8205042,6.0943981 23.6109091,8.1225 C23.4509091,10.26 22.4836364,12.55125 20.7381818,14.925 C18.9090909,17.4375 16.2290909,19.9875 12.8036364,22.5 L11.9672727,23.12625 Z M3.45818182,3.8925 C2.38163066,4.96207375 1.84474893,6.48463678 2.00363636,8.0175 C2.13090909,9.82875 2.98181818,11.82375 4.52727273,13.93875 C6.23636364,16.27875 8.74181818,18.6825 11.9745455,21.06375 C15.2181818,18.6675 17.7345455,16.26 19.4581818,13.90875 C21.0145455,11.79 21.8727273,9.78375 22.0036364,7.98375 C22.1659039,6.45046439 21.6284958,4.92640844 20.5490909,3.85875 C19.6976759,3.00042937 18.554287,2.51989764 17.3636364,2.52 C16.36,2.52 15.0763636,2.62875 14.0509091,3.45 C13.6107404,3.77112064 13.2301409,4.17123511 12.9272727,4.63125 L12.9272727,4.6575 L12,6 L11.0909091,4.665 C10.7856904,4.19920346 10.4027928,3.79291346 9.96,3.465 C8.94181818,2.65125 7.66181818,2.5425 6.66181818,2.5425 C5.46548613,2.54247938 4.31674864,3.02575684 3.46181818,3.88875 L3.45818182,3.8925 Z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="aside-product-category"></div>
+                    <div class="aside-product-rating">
+                        <svg class="aside-product-rating__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                            <defs>
+                                <clipPath id="reviews-stats__stars--aside">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </clipPath>
+                            </defs>
+                            <g fill="#e6e6e6">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                            </g>
+                            <rect height="48" width="240" fill="#000" clip-path="url(#reviews-stats__stars--aside)"></rect>
+                        </svg>
+                        <span class="aside-product-rating__average">(4,7) <a href="#reviews" class="aside-product-rating__count">1106 recenzí</a></span>
+                    </div>
+                    <div class="aside-product-tags">
+                        <div class="aside-product-tags__box aside-product-tags__box--sale hidden">Akce</div>
+                        <div class="aside-product-tags__box aside-product-tags__box--free-delivery hidden">Doprava zdarma</div>
+                        <div class="aside-product-tags__box aside-product-tags__box--free-new hidden">Nové</div>
+                    </div>
+                    <div class="aside-product-price">
+                        <div>
+                            <span class="aside-product-price__current"></span>
+                            <span class="aside-product-price__before"></span>
+                        </div>
+                        <div class="aside-product-price__savings"></div>
+                    </div>
+                    <div class="aside-product-coupon">
+                        <div class="aside-coupon-wrapper">
+                            <div class="aside-coupon__text"><span class="aside-coupon__amount"></span> s kódem <span class="aside-coupon__code"></span></div>
+                            <div class="aside-coupon__info">
+                                Kód uplatníte v košíku
+                                <svg class="aside-coupon__icon" color="#bfbfbf" width="14" height="14" tabindex="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                    <path fill="currentColor" d="M32,0A32,32,0,1,0,64,32,32,32,0,0,0,32,0Zm4,52H28V26h8ZM32,22.86a5,5,0,1,1,5-5A5,5,0,0,1,32,22.86Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="aside-coupon__box">
+                                <span class="aside-coupon__box-color"></span>
+                                <span class="aside-coupon__box-line">Black</span>
+                                <span class="aside-coupon__box-line">Friday</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-product-variant-wrapper">
+                        <div class="aside-product-variant">
+                            <div class="aside-product-variant__icon aside-product-variant__icon--sale hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 64" color="#ffffff">
+                                    <path fill="currentColor" d="M11.77,32A11.78,11.78,0,1,1,23.54,20.2,11.79,11.79,0,0,1,11.77,32Zm0-17.88a6.1,6.1,0,1,0,6.1,6.1A6.1,6.1,0,0,0,11.77,14.1Z"></path>
+                                    <path fill="currentColor" d="M44.28,55.57A11.78,11.78,0,1,1,56.05,43.79,11.79,11.79,0,0,1,44.28,55.57Zm0-17.87a6.1,6.1,0,1,0,6.1,6.09A6.1,6.1,0,0,0,44.28,37.7Z"></path>
+                                    <rect fill="currentColor" x="-8.73" y="29.16" width="73.52" height="5.68" transform="translate(-14.42 29.19) rotate(-45)"></rect>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--free-delivery hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <path fill="currentColor" d="M0.01,40.9c0,-1.94 1.5,-2 1.5,-2h2v-11c-0.04,-4.19 1.61,-8.22 4.58,-11.17l2.46,-2.34c2.38,-2.31 5.58,-3.57 8.89,-3.51h2.56v-7.19c0.02,-1.53 1.28,-2.77 2.81,-2.76h36.57c1.43,0 2.59,1.16 2.59,2.59v37c0,1.55 -1.58,2.48 -3.12,2.48h-2c0,6.29 -5.74,11.48 -12.34,9.41c-4.01,-1.42 -6.72,-5.18 -6.8,-9.43h-13.26c0,6.29 -5.74,11.46 -12.34,9.39c-4.01,-1.44 -6.71,-5.23 -6.77,-9.49h-5.84c0,0 -1.49,-0.04 -1.49,-1.98zM21.87,43.39c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67zM22,15h-3c-2.01,-0.05 -3.97,0.66 -5.48,2l-3.95,4.52c-0.64,0.6 -1,1.43 -1,2.3v2.18h13.43zM54.26,43.43c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67z"></path>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--new hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <polygon fill="currentColor" points="32 46 12 62 19.75 37 0 24 24.36 24 32 0 39.5 24 64 24 44.25 37 52 62 32 46"></polygon>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__size"></div>
+                            <div class="aside-product-variant__price"></div>
+                        </div>
+                        <div class="aside-product-variant">
+                            <div class="aside-product-variant__icon aside-product-variant__icon--sale hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 64" color="#ffffff">
+                                    <path fill="currentColor" d="M11.77,32A11.78,11.78,0,1,1,23.54,20.2,11.79,11.79,0,0,1,11.77,32Zm0-17.88a6.1,6.1,0,1,0,6.1,6.1A6.1,6.1,0,0,0,11.77,14.1Z"></path>
+                                    <path fill="currentColor" d="M44.28,55.57A11.78,11.78,0,1,1,56.05,43.79,11.79,11.79,0,0,1,44.28,55.57Zm0-17.87a6.1,6.1,0,1,0,6.1,6.09A6.1,6.1,0,0,0,44.28,37.7Z"></path>
+                                    <rect fill="currentColor" x="-8.73" y="29.16" width="73.52" height="5.68" transform="translate(-14.42 29.19) rotate(-45)"></rect>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--free-delivery hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <path fill="currentColor" d="M0.01,40.9c0,-1.94 1.5,-2 1.5,-2h2v-11c-0.04,-4.19 1.61,-8.22 4.58,-11.17l2.46,-2.34c2.38,-2.31 5.58,-3.57 8.89,-3.51h2.56v-7.19c0.02,-1.53 1.28,-2.77 2.81,-2.76h36.57c1.43,0 2.59,1.16 2.59,2.59v37c0,1.55 -1.58,2.48 -3.12,2.48h-2c0,6.29 -5.74,11.48 -12.34,9.41c-4.01,-1.42 -6.72,-5.18 -6.8,-9.43h-13.26c0,6.29 -5.74,11.46 -12.34,9.39c-4.01,-1.44 -6.71,-5.23 -6.77,-9.49h-5.84c0,0 -1.49,-0.04 -1.49,-1.98zM21.87,43.39c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67zM22,15h-3c-2.01,-0.05 -3.97,0.66 -5.48,2l-3.95,4.52c-0.64,0.6 -1,1.43 -1,2.3v2.18h13.43zM54.26,43.43c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67z"></path>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--new hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <polygon fill="currentColor" points="32 46 12 62 19.75 37 0 24 24.36 24 32 0 39.5 24 64 24 44.25 37 52 62 32 46"></polygon>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__size"></div>
+                            <div class="aside-product-variant__price"></div>
+                        </div>
+                        <div class="aside-product-variant">
+                            <div class="aside-product-variant__icon aside-product-variant__icon--sale hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 64" color="#ffffff">
+                                    <path fill="currentColor" d="M11.77,32A11.78,11.78,0,1,1,23.54,20.2,11.79,11.79,0,0,1,11.77,32Zm0-17.88a6.1,6.1,0,1,0,6.1,6.1A6.1,6.1,0,0,0,11.77,14.1Z"></path>
+                                    <path fill="currentColor" d="M44.28,55.57A11.78,11.78,0,1,1,56.05,43.79,11.79,11.79,0,0,1,44.28,55.57Zm0-17.87a6.1,6.1,0,1,0,6.1,6.09A6.1,6.1,0,0,0,44.28,37.7Z"></path>
+                                    <rect fill="currentColor" x="-8.73" y="29.16" width="73.52" height="5.68" transform="translate(-14.42 29.19) rotate(-45)"></rect>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--free-delivery hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <path fill="currentColor" d="M0.01,40.9c0,-1.94 1.5,-2 1.5,-2h2v-11c-0.04,-4.19 1.61,-8.22 4.58,-11.17l2.46,-2.34c2.38,-2.31 5.58,-3.57 8.89,-3.51h2.56v-7.19c0.02,-1.53 1.28,-2.77 2.81,-2.76h36.57c1.43,0 2.59,1.16 2.59,2.59v37c0,1.55 -1.58,2.48 -3.12,2.48h-2c0,6.29 -5.74,11.48 -12.34,9.41c-4.01,-1.42 -6.72,-5.18 -6.8,-9.43h-13.26c0,6.29 -5.74,11.46 -12.34,9.39c-4.01,-1.44 -6.71,-5.23 -6.77,-9.49h-5.84c0,0 -1.49,-0.04 -1.49,-1.98zM21.87,43.39c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67zM22,15h-3c-2.01,-0.05 -3.97,0.66 -5.48,2l-3.95,4.52c-0.64,0.6 -1,1.43 -1,2.3v2.18h13.43zM54.26,43.43c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67z"></path>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--new hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <polygon fill="currentColor" points="32 46 12 62 19.75 37 0 24 24.36 24 32 0 39.5 24 64 24 44.25 37 52 62 32 46"></polygon>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__size"></div>
+                            <div class="aside-product-variant__price"></div>
+                        </div>
+                        <div class="aside-product-variant">
+                            <div class="aside-product-variant__icon aside-product-variant__icon--sale hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 64" color="#ffffff">
+                                    <path fill="currentColor" d="M11.77,32A11.78,11.78,0,1,1,23.54,20.2,11.79,11.79,0,0,1,11.77,32Zm0-17.88a6.1,6.1,0,1,0,6.1,6.1A6.1,6.1,0,0,0,11.77,14.1Z"></path>
+                                    <path fill="currentColor" d="M44.28,55.57A11.78,11.78,0,1,1,56.05,43.79,11.79,11.79,0,0,1,44.28,55.57Zm0-17.87a6.1,6.1,0,1,0,6.1,6.09A6.1,6.1,0,0,0,44.28,37.7Z"></path>
+                                    <rect fill="currentColor" x="-8.73" y="29.16" width="73.52" height="5.68" transform="translate(-14.42 29.19) rotate(-45)"></rect>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--free-delivery hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <path fill="currentColor" d="M0.01,40.9c0,-1.94 1.5,-2 1.5,-2h2v-11c-0.04,-4.19 1.61,-8.22 4.58,-11.17l2.46,-2.34c2.38,-2.31 5.58,-3.57 8.89,-3.51h2.56v-7.19c0.02,-1.53 1.28,-2.77 2.81,-2.76h36.57c1.43,0 2.59,1.16 2.59,2.59v37c0,1.55 -1.58,2.48 -3.12,2.48h-2c0,6.29 -5.74,11.48 -12.34,9.41c-4.01,-1.42 -6.72,-5.18 -6.8,-9.43h-13.26c0,6.29 -5.74,11.46 -12.34,9.39c-4.01,-1.44 -6.71,-5.23 -6.77,-9.49h-5.84c0,0 -1.49,-0.04 -1.49,-1.98zM21.87,43.39c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67zM22,15h-3c-2.01,-0.05 -3.97,0.66 -5.48,2l-3.95,4.52c-0.64,0.6 -1,1.43 -1,2.3v2.18h13.43zM54.26,43.43c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67z"></path>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__icon aside-product-variant__icon--new hidden">
+                                <svg class="aside-product-variant__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#ffffff">
+                                    <polygon fill="currentColor" points="32 46 12 62 19.75 37 0 24 24.36 24 32 0 39.5 24 64 24 44.25 37 52 62 32 46"></polygon>
+                                </svg>
+                            </div>
+                            <div class="aside-product-variant__size"></div>
+                            <div class="aside-product-variant__price"></div>
+                        </div>
+                    </div>
+                    <div class="aside-product-status-wrapper">
+                        <div class="aside-product-status">Skladem</div>
+                        <div class="aside-product-unit-price"></div>
+                    </div>
+                    <div class="aside-product-status-wrapper aside-product-status-wrapper--na hidden">Toto zboží není momentálně k dispozici</div>
+                    <div class="aside-product-service-wrapper">
+                        <label class="aside-product-service aside-product-service--try-it-first hidden">
+                            <input class="aside-product-service__checkbox" type="checkbox" />
+                            <span class="aside-product-service__checkbox-overlay"></span>
+                            <div class="aside-product-service__title">Vzorek na vyzkoušení (Try it first) - <span class="aside-product-service__title-bold">Zdarma</span></div>
+                        </label>
+                        <label class="aside-product-service aside-product-service--engraving hidden">
+                            <input class="aside-product-service__checkbox" type="checkbox" />
+                            <span class="aside-product-service__checkbox-overlay"></span>
+                            <div class="aside-product-service__title">Vygravírovat vlastní text - <span class="aside-product-service__title-bold">99 Kč</span></div>
+                        </label>
+                    </div>
+                    <div class="aside-product-button-wrapper">
+                        <div class="aside-product-button">Do košíku</div>
+                        <div class="aside-product-button aside-product-button--secondary">Vyzvednout ihned</div>
+                    </div>
+                    <div class="aside-product-button-wrapper aside-product-button-wrapper--na hidden">
+                        <div class="aside-product-button">Hlídat dostupnost</div>
+                    </div>
+                    <div class="aside-product-code"></div>
+                    <div class="aside-product-gift-wrapper aside-product-gift-wrapper--gift hidden">
+                        <svg class="aside-product-gift__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 64">
+                            <path fill="currentColor" d="M26,64H6a2.22,2.22,0,0,1-2-2.37V40H26Zm0-44H2a2.22,2.22,0,0,0-2,2.37V33.63A2.22,2.22,0,0,0,2,36H26Zm4,44H49.92a2.22,2.22,0,0,0,2-2.37V40H30ZM54,20H30V36H54a2.22,2.22,0,0,0,2-2.37V22.37A2.22,2.22,0,0,0,54,20Z"></path>
+                            <path fill="currentColor" d="M29.1,16.42a24,24,0,0,0,6.14-8.48C41.17-5.27,31.43,2,28,2s-12.94-7.26-7,6a24,24,0,0,0,6.14,8.48s.58.53.88.53C28.55,16.94,28.57,16.88,29.1,16.42Z"></path>
+                            <path fill="currentColor" d="M29.39,17.31a47,47,0,0,0,7.34-5.17c4.17-3.55,10-9.92,8.87-2.14C45,13.86,49.77,16.86,41,17.47a72,72,0,0,1-11.62-.16"></path>
+                            <path fill="currentColor" d="M26.82,17.31a47,47,0,0,1-7.34-5.17c-4.17-3.55-10-9.92-8.87-2.14.55,3.86-4.18,6.86,4.59,7.47a72,72,0,0,0,11.62-.16"></path>
+                        </svg>
+                        <div class="aside-product-gift-side-wrapper">
+                            <div class="aside-product-gift__title">Dárek k nákupu</div>
+                            <div class="aside-product-gift">
+                                <div class="aside-product-gift__desc">Miniatura parfémované vody pro ženy Lancôme La Vie Est Belle En Rose</div>
+                                <div class="aside-product-gift__img-wrapper">
+                                    <img class="aside-product-gift__img" src="https://cdn.notinoimg.com/detail_zoom/lancome/3614273088749_01-o/lancome-la-vie-est-belle-en-rose-toaletni-voda-pro-zeny_.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-product-gift-wrapper aside-product-gift-wrapper--free-delivery-offer hidden">
+                        <svg class="aside-product-gift__svg aside-product-gift__svg--car" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <path fill="currentColor" d="M0.01,40.9c0,-1.94 1.5,-2 1.5,-2h2v-11c-0.04,-4.19 1.61,-8.22 4.58,-11.17l2.46,-2.34c2.38,-2.31 5.58,-3.57 8.89,-3.51h2.56v-7.19c0.02,-1.53 1.28,-2.77 2.81,-2.76h36.57c1.43,0 2.59,1.16 2.59,2.59v37c0,1.55 -1.58,2.48 -3.12,2.48h-2c0,6.29 -5.74,11.48 -12.34,9.41c-4.01,-1.42 -6.72,-5.18 -6.8,-9.43h-13.26c0,6.29 -5.74,11.46 -12.34,9.39c-4.01,-1.44 -6.71,-5.23 -6.77,-9.49h-5.84c0,0 -1.49,-0.04 -1.49,-1.98zM21.87,43.39c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67zM22,15h-3c-2.01,-0.05 -3.97,0.66 -5.48,2l-3.95,4.52c-0.64,0.6 -1,1.43 -1,2.3v2.18h13.43zM54.26,43.43c0,-1.89 -1.14,-3.59 -2.89,-4.32c-1.75,-0.72 -3.76,-0.32 -5.09,1.02c-1.33,1.34 -1.73,3.35 -1.01,5.09c0.73,1.74 2.43,2.88 4.32,2.88c2.58,-0.01 4.66,-2.09 4.66,-4.67z"></path>
+                        </svg>
+                        <div class="aside-product-gift-side-wrapper">
+                            <div class="aside-product-gift__title">Možnost dopravy zdarma</div>
+                            <div class="aside-product-gift">
+                                <div class="aside-product-gift__desc">Nakupte aspoň 2 produkty od značky <span class="global-brand"></span> a dopravu máte zdarma</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-product-gift-wrapper aside-product-gift-wrapper--gift hidden">
+                        <svg class="aside-product-gift__svg aside-product-gift__svg--grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 64">
+                            <path fill="currentColor" d="M26,64H6a2.22,2.22,0,0,1-2-2.37V40H26Zm0-44H2a2.22,2.22,0,0,0-2,2.37V33.63A2.22,2.22,0,0,0,2,36H26Zm4,44H49.92a2.22,2.22,0,0,0,2-2.37V40H30ZM54,20H30V36H54a2.22,2.22,0,0,0,2-2.37V22.37A2.22,2.22,0,0,0,54,20Z"></path>
+                            <path fill="currentColor" d="M29.1,16.42a24,24,0,0,0,6.14-8.48C41.17-5.27,31.43,2,28,2s-12.94-7.26-7,6a24,24,0,0,0,6.14,8.48s.58.53.88.53C28.55,16.94,28.57,16.88,29.1,16.42Z"></path>
+                            <path fill="currentColor" d="M29.39,17.31a47,47,0,0,0,7.34-5.17c4.17-3.55,10-9.92,8.87-2.14C45,13.86,49.77,16.86,41,17.47a72,72,0,0,1-11.62-.16"></path>
+                            <path fill="currentColor" d="M26.82,17.31a47,47,0,0,1-7.34-5.17c-4.17-3.55-10-9.92-8.87-2.14.55,3.86-4.18,6.86,4.59,7.47a72,72,0,0,0,11.62-.16"></path>
+                        </svg>
+                        <div class="aside-product-gift-side-wrapper">
+                            <div class="aside-product-gift__title">Získejte dárek</div>
+                            <div class="aside-product-gift">
+                                <div class="aside-product-gift__desc">K objednávce nad 2 000 Kč získáte dámskou kosmetičkou tašku Notino Basic Collection zdarma.</div>
+                                <div class="aside-product-gift__img-wrapper">
+                                    <img class="aside-product-gift__img" src="https://cdn.notinoimg.com/detail_zoom/notino/2800023182503_01-o/notino-basic-collection-kosmeticka-taska-damska-mala_.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-product-delivery">
+                        <div class="aside-product-delivery__content">
+                            <div>
+                                <div class="aside-product-delivery__status"></div>
+                            </div>
+                            <div class="aside-product-delivery__text">
+                                <div class="aside-product-delivery__title">Doručení na adresu</div>
+                                <div class="aside-product-delivery__desc">Prodejny a termíny doručení</div>
+                            </div>
+                        </div>
+                        <div class="aside-product-delivery__estimate"></div>
+                    </div>
+                    <div class="aside-placeholder"></div>
+                </aside>
+            </div>
+            <section class="section-tabs-mobile">
+                <div class="tab-mobile">
+                    <div class="tab-mobile-top">
+                        <div class="tab-mobile__title">Popis</div>
+                        <svg class="tab-mobile__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64" color="#000000">
+                            <polygon fill="currentColor" points="46.21 19.13 25 40.34 3.79 19.13 0.96 21.96 25 46 49.04 21.96 46.21 19.13"></polygon>
+                        </svg>
+                        <svg class="tab-mobile__icon tab-mobile__icon--open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64" color="#000000">
+                            <polygon fill="currentColor" points="49.04 42.04 25 18 0.96 42.04 3.79 44.87 25 23.66 46.21 44.87 49.04 42.04"></polygon>
+                        </svg>
+                    </div>
+                    <div class="tab-mobile-content">
+                        <div class="tab-mobile-content__section">
+                            <div class="tab-mobile-content__desc-title tab-mobile-content__desc-title--main">Vlastnosti</div>
+                            <div class="tab-content__tr">
+                                <div class="tab-content__td">Hlava</div>
+                                <div class="tab-content__td">máta, mandarinka</div>
+                            </div>
+                            <div class="tab-content__tr">
+                                <div class="tab-content__td">Srdce</div>
+                                <div class="tab-content__td">skořice, růže</div>
+                            </div>
+                            <div class="tab-content__tr">
+                                <div class="tab-content__td">Základ</div>
+                                <div class="tab-content__td">ambra, kůže</div>
+                            </div>
+                            <div class="tab-content__tr">
+                                <div class="tab-content__td">Druh vůně</div>
+                                <div class="tab-content__td">kořenitá, dřevitá</div>
+                            </div>
+                        </div>
+                        <div class="tab-mobile-content__desc-title tab-mobile-content__desc-title--main">Popis</div>
+                        <div class="tab-mobile-content__section">
+                            <div class="tab-mobile-content__desc-text">Parfémovaná voda Lancôme La Vie Est Belle je symbolem svobody a štěstí, poctou všem krásám života. Tato exkluzivní dámská vůně byla navržena tak, aby vám okamžitě vykouzlila úsměv na rtech.</div>
+                            <div class="tab-mobile-content__desc-text">
+                                <ul class="tab-mobile-content__desc-list">
+                                    <li>sladká ovocno-květinová, sofistikovaná vůně</li>
+                                    <li>pro sebevědomou ženu, jež odmítá diktát společnosti</li>
+                                    <li>vhodná pro celodenní nošení</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-mobile-content__section">
+                            <div class="tab-mobile-content__desc-title">Příběh vůně</div>
+                            <div class="tab-mobile-content__desc-text">La Vie Est Belle představuje volbu žít svůj život podle sebe, svobodu vybrat si vlastní cestu ke štěstí a nenechat se svázat očekáváním společnosti. Skrývá v sobě vyváženou kombinaci krásy a síly. Vůně byla uvedena na trh v roce 2012 a na jejím vzniku se podíleli hned tři francouzští mistři parfémáři v čele s Dominiquem Ropionem. Flakon parfémované vody znázorňuje v ostrých křišťálových liniích úsměv a je přepracováním původní verze z roku 1949.</div>
+                        </div>
+                        <div class="tab-mobile-content__section">
+                            <div class="tab-mobile-content__desc-title">Složení vůně</div>
+                            <div class="tab-mobile-content__desc-text">V úvodu parfémované vody La Vie Est Belle vás okouzlí šťavnaté esence černého rybízu a sladké hrušky. Srdcem celé vonné kompozice je vzácný kosatec, jímž dále prostupují tóny hedvábného jasmínu a magických květů pomerančovníku. Základ vůně je tvořen z jedinečných tonka fazolí, delikátních pralinek, exotického pačuli a gurmánské vanilky.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-mobile">
+                    <div class="tab-mobile-top">
+                        <div class="tab-mobile__title">O značce</div>
+                        <svg class="tab-mobile__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64" color="#000000">
+                            <polygon fill="currentColor" points="46.21 19.13 25 40.34 3.79 19.13 0.96 21.96 25 46 49.04 21.96 46.21 19.13"></polygon>
+                        </svg>
+                        <svg class="tab-mobile__icon tab-mobile__icon--open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64" color="#000000">
+                            <polygon fill="currentColor" points="49.04 42.04 25 18 0.96 42.04 3.79 44.87 25 23.66 46.21 44.87 49.04 42.04"></polygon>
+                        </svg>
+                    </div>
+                    <div class="tab-mobile-content">
+                        <div class="tab-mobile-content__section">
+                            <div class="tab-mobile-content__desc-text">Příběh Lancôme, světoznámé značky kvalitní kosmetické péče o krásu, se píše již přes 80 let. Od svého založení v roce 1935 se produkty Lancôme vyznačují prokazatelnými výsledky a pyšní nádechem francouzského kouzla.</div>
+                            <div class="tab-mobile-content__desc-text">Hned v roce svého založení uvedla společnost na trh první vůni a nadšení veřejnosti na sebe nenechalo dlouho čekat. O rok později vyvinula první pleťový krém Lancôme, který je dodnes díky svým neobyčejným vlastnostem nezbytnou součástí kosmetické výbavy každé ženy. V současnosti patří přípravky a parfémy Lancôme mezi nejprodávanější ve svých kategoriích.</div>
+                            <div class="tab-mobile-content__desc-text">Značka Lancôme oslavuje ženy a pomáhá jim získat sebedůvěru. Objevte i vy kosmetiku a vůně Lancôme – být sama sebou a cítit se skvěle ještě nikdy nebylo tak snadné.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-mobile">
+                    <div class="tab-mobile-top">
+                        <div class="tab-mobile__title">Objevte více</div>
+                        <svg class="tab-mobile__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64" color="#000000">
+                            <polygon fill="currentColor" points="46.21 19.13 25 40.34 3.79 19.13 0.96 21.96 25 46 49.04 21.96 46.21 19.13"></polygon>
+                        </svg>
+                        <svg class="tab-mobile__icon tab-mobile__icon--open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64" color="#000000">
+                            <polygon fill="currentColor" points="49.04 42.04 25 18 0.96 42.04 3.79 44.87 25 23.66 46.21 44.87 49.04 42.04"></polygon>
+                        </svg>
+                    </div>
+                    <div class="tab-mobile-content">
+                        <div class="tab-mobile-content__section tab-mobile-content__section--flex">
+                            <div class="tab-mobile-content__flex-item">
+                                <div class="tab-mobile-content__desc-title">ŽIVOT JE KRÁSNÝ</div>
+                                <div class="tab-mobile-content__desc-text">Ikonická vůně La vie est belle Eau de Parfum otevřela novou kapitolu, je to vůbec první vůně prostoupená extraktem z vzácného kosatce. Tato vonná kompozice je tvořena nejvzácnějšími přírodními ingrediencemi a představuje moderní interpretaci orientálních vůní s dotekem gurmánské vanilky. Snoubí se v ní elegance vzácného kosatce se silou exotické pačule a sladkostí vanilkových tónů, které společně vytváří nezaměnitelnou a hlubokou vůni.</div>
+                            </div>
+                            <div class="tab-mobile-content__flex-item">
+                                <img class="tab-mobile-content__desc-img" src="https://cdn.notinoimg.com/images/gallery/richcontent/lancome/lveb/lveb_edp_ingredients_505x400.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="tab-mobile-content__section tab-mobile-content__section--flex">
+                            <div class="tab-mobile-content__flex-item">
+                                <div class="tab-mobile-content__desc-title">KŘIŠŤÁLOVÝ ÚSMĚV</div>
+                                <div class="tab-mobile-content__desc-text">Oslnivý flakon přezdívaný „le sourire de cristal“ neboli křišťálový úsměv evokuje oblé tvary usmívajících se rtů promítnuté do křišťálového čtyřhranu. Tečkou za jeho rafinovaností je perleťová organzová stuha, kterou je převázáno hrdlo flakonu, ztělesňující křídla svobody.</div>
+                            </div>
+                            <div class="tab-mobile-content__flex-item">
+                                <img class="tab-mobile-content__desc-img" src="https://cdn.notinoimg.com/images/gallery/richcontent/lancome/lveb/lveb_edp_flacon_505x400.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="tab-mobile-content__section tab-mobile-content__section--flex">
+                            <div class="tab-mobile-content__flex-item">
+                                <div class="tab-mobile-content__desc-text">Štěstí je skutečné, pouze je-li sdíleno. Každý flakon vůně La vie est belle je ztělesněním radosti. Přesně jako Julia Roberts – stačí jediný nečekaný čin, který přivolá štěstí a umožní vám jej sdílet se všemi okolo.</div>
+                            </div>
+                            <div class="tab-mobile-content__flex-item">
+                                <img class="tab-mobile-content__desc-img" src="https://cdn.notinoimg.com/images/gallery/richcontent/lancome/lveb/lveb_edp_julia_505x400.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-reviews" id="reviews">
+                <div class="reviews-title">Recenze <span class="global-brand"></span> <span class="global-name"></span></div>
+                <div class="reviews-stats">
+                    <div class="reviews-stats__column">
+                        <div class="reviews-stats__rate-wrapper">
+                            <div class="reviews-stats__rate">4,7</div>
+                            <svg class="reviews-stats__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                                <defs>
+                                    <clipPath id="reviews-stats__stars--reviews">
+                                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                        <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                    </clipPath>
+                                </defs>
+                                <g fill="#e6e6e6">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </g>
+                                <rect height="48" width="240" fill="#000" clip-path="url(#reviews-stats__stars--reviews)"></rect>
+                            </svg>
+                        </div>
+                        <div class="reviews-stats__button">Napsat recenzi</div>
+                    </div>
+                    <div class="reviews-stats__column">
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">941</div>
+                            </div>
+                            <svg class="reviews-stats__icon reviews-stats__icon--stars-5 reviews-stats__icon--small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                                <g fill="#e6e6e6">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">78</div>
+                            </div>
+                            <svg class="reviews-stats__icon reviews-stats__icon--stars-4 reviews-stats__icon--small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                                <g fill="#e6e6e6">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">27</div>
+                            </div>
+                            <svg class="reviews-stats__icon reviews-stats__icon--stars-3 reviews-stats__icon--small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                                <g fill="#e6e6e6">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">12</div>
+                            </div>
+                            <svg class="reviews-stats__icon reviews-stats__icon--stars-2 reviews-stats__icon--small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                                <g fill="#e6e6e6">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">48</div>
+                            </div>
+                            <svg class="reviews-stats__icon reviews-stats__icon--stars-1 reviews-stats__icon--small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                                <g fill="#e6e6e6">
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                    <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="reviews-stats__column">
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper reviews-stats__progress-bar-wrapper--full-width">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">intenzita</div>
+                            </div>
+                        </div>
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper reviews-stats__progress-bar-wrapper--full-width">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">vzhled flakonu</div>
+                            </div>
+                        </div>
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper reviews-stats__progress-bar-wrapper--full-width">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">celkový dojem</div>
+                            </div>
+                        </div>
+                        <div class="reviews-stats__row">
+                            <div class="reviews-stats__progress-bar-wrapper reviews-stats__progress-bar-wrapper--full-width">
+                                <div class="reviews-stats__progress-bar">
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                    <div class="reviews-stats__progress-bar-segment-fill"></div>
+                                </div>
+                                <div class="reviews-stats__count">výdrž vůně</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews-content">
+                    <div class="reviews-content__item">
+                        <div class="reviews-content__text">Těžší, intenzivní, dlouho trvající vůně pro zralou ženu a spíše večerní použití.</div>
+                        <svg class="reviews-content__icon reviews-stats__icon--stars-5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                            <g fill="#e6e6e6">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                            </g>
+                        </svg>
+                        <div class="reviews-content__name">Milena J.</div>
+                        <div class="reviews-content__date">22. července 2022</div>
+                        <div class="reviews-content__rating-wrapper">
+                            <div class="reviews-content__rating-desc">Byla recenze užitečná?</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ano</span>0</div>
+                            <div class="reviews-content__rating-separator">|</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ne</span>1</div>
+                        </div>
+                    </div>
+                    <div class="reviews-content__item">
+                        <div class="reviews-content__text">Sázka na jistotu, je mi 18 a tuto vůni mi chválí všichni spolužáci. Je to má srdcovka.</div>
+                        <svg class="reviews-content__icon reviews-stats__icon--stars-5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                            <g fill="#e6e6e6">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                            </g>
+                        </svg>
+                        <div class="reviews-content__name">Eva R.</div>
+                        <div class="reviews-content__date">29. května 2022</div>
+                        <div class="reviews-content__rating-wrapper">
+                            <div class="reviews-content__rating-desc">Byla recenze užitečná?</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ano</span>1</div>
+                            <div class="reviews-content__rating-separator">|</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ne</span>1</div>
+                        </div>
+                    </div>
+                    <div class="reviews-content__item">
+                        <div class="reviews-content__text">Úžasný parfém, krásna vůně, originalní balení. Jsem velice spokojená jak s výrobkem, tak obchodem. Doporučuji.</div>
+                        <svg class="reviews-content__icon reviews-stats__icon--stars-5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                            <g fill="#e6e6e6">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                            </g>
+                        </svg>
+                        <div class="reviews-content__name">Irena D.</div>
+                        <div class="reviews-content__date">10. května 2021</div>
+                        <div class="reviews-content__rating-wrapper">
+                            <div class="reviews-content__rating-desc">Byla recenze užitečná?</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ano</span>1</div>
+                            <div class="reviews-content__rating-separator">|</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ne</span>0</div>
+                        </div>
+                    </div>
+                    <div class="reviews-content__item">
+                        <div class="reviews-content__text">Bohužel jsem na tento parfém měla silnou alergickou reakci v podobě kožní alergie, která odezněla až po 3 týdnech.</div>
+                        <svg class="reviews-content__icon reviews-stats__icon--stars-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                            <g fill="#e6e6e6">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                            </g>
+                        </svg>
+                        <div class="reviews-content__name">Tereza B.</div>
+                        <div class="reviews-content__date">19. dubna 2022</div>
+                        <div class="reviews-content__rating-wrapper">
+                            <div class="reviews-content__rating-desc">Byla recenze užitečná?</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ano</span>2</div>
+                            <div class="reviews-content__rating-separator">|</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ne</span>0</div>
+                        </div>
+                    </div>
+                    <div class="reviews-content__item">
+                        <div class="reviews-content__text">Tuto parfémovanou vodu používám již několik let a jsem z ní nadšená.</div>
+                        <svg class="reviews-content__icon reviews-stats__icon--stars-5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 255 48">
+                            <g fill="#e6e6e6">
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(0,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(51,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(102,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(153,0)"></path>
+                                <path d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z" transform="translate(204,0)"></path>
+                            </g>
+                        </svg>
+                        <div class="reviews-content__name">Jiřina Č.</div>
+                        <div class="reviews-content__date">2. dubna 2021</div>
+                        <div class="reviews-content__rating-wrapper">
+                            <div class="reviews-content__rating-desc">Byla recenze užitečná?</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ano</span>6</div>
+                            <div class="reviews-content__rating-separator">|</div>
+                            <div class="reviews-content__rating"><span class="reviews-content__rating-vote">Ne</span>0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="display: none" class="section-related">
+                <div class="related-title">Mohlo by vás zajímat</div>
+                <div class="related-product-wrapper">
+                    <div class="related-product">
+                        <div class="related-product__image-wrapper">
+                            <img class="related-product__img" src="https://cdn.notinoimg.com/list_2k/paco-rabanne/3349668579839_01-o/paco-rabanne-1-million-parfum-parfem-pro-muze_.jpg" alt="" />
+                            <div class="related-product__label-wrapper">
+                                <div class="related-product__label related-product__label--sale">Akce</div>
+                            </div>
+                        </div>
+                        <div class="related-product__brand">Paco Rabanne</div>
+                        <div class="related-product__name">1 Million Parfum</div>
+                        <div class="related-product__category">parfém pro muže 100 ml</div>
+                        <div class="related-product__price">1 699 Kč</div>
+                    </div>
+                    <div class="related-product">
+                        <div class="related-product__image-wrapper">
+                            <img class="related-product__img" src="https://cdn.notinoimg.com/list_2k/paco-rabanne/3349668600304_01-o/paco-rabanne-1-million-elixir-parfemovana-voda-pro-muze_.jpg" alt="" />
+                            <div class="related-product__label-wrapper">
+                                <div class="related-product__label">Nové</div>
+                            </div>
+                        </div>
+                        <div class="related-product__brand">Paco Rabanne</div>
+                        <div class="related-product__name">1 Million Elixir</div>
+                        <div class="related-product__category">parfémovaná voda pro muže 100 ml</div>
+                        <div class="related-product__price">3 230 Kč</div>
+                    </div>
+                    <div class="related-product">
+                        <div class="related-product__image-wrapper">
+                            <img class="related-product__img" src="https://cdn.notinoimg.com/list_2k/paco-rabanne/3349668515660_01-o/paco-rabanne-invictus-toaletni-voda-pro-muze___31.jpg" alt="" />
+                            <div class="related-product__label-wrapper">
+                                <div class="related-product__label">Doprava zdarma</div>
+                            </div>
+                        </div>
+                        <div class="related-product__brand">Paco Rabanne</div>
+                        <div class="related-product__name">Invictus</div>
+                        <div class="related-product__category">toaletní voda pro muže 100 ml</div>
+                        <div class="related-product__price">1 578 Kč</div>
+                    </div>
+                    <div class="related-product">
+                        <div class="related-product__image-wrapper">
+                            <img class="related-product__img" src="https://cdn.notinoimg.com/list_2k/paco-rabanne/3349668582297_01-o/paco-rabanne-phantom-toaletni-voda-pro-muze_.jpg" alt="" />
+                            <div class="related-product__label-wrapper">
+                                <div class="related-product__label">Doprava zdarma</div>
+                            </div>
+                        </div>
+                        <div class="related-product__brand">Paco Rabanne</div>
+                        <div class="related-product__name">Phantom</div>
+                        <div class="related-product__category">toaletní voda pro muže 100 ml</div>
+                        <div class="related-product__price">2 622 Kč</div>
+                    </div>
+                    <div class="related-product">
+                        <div class="related-product__image-wrapper">
+                            <img class="related-product__img" src="https://cdn.notinoimg.com/list_2k/paco-rabanne/3349666007945-03-o/paco-rabanne-1-million-deodorant-ve-spreji-pro-muze___24.jpg" alt="" />
+                            <div class="related-product__label-wrapper"></div>
+                        </div>
+                        <div class="related-product__brand">Paco Rabanne</div>
+                        <div class="related-product__name">1 Million</div>
+                        <div class="related-product__category">deodorant ve spreji pro muže 150 ml</div>
+                        <div class="related-product__price">706 Kč</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="./assets/js/scripts.js"></script>
+        <script type="module" src="./assets/js/product.js"></script>
+    </body>
+</html>

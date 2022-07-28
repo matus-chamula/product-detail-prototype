@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none !important;
+}
